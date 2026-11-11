@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    height: 50px;
+    background-color: #181825;
+    border-bottom: 1px solid #313244;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #89b4fa;
+}
+
+.logo small {
+    color: #a6adc8;
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+}
+
+.btn.primary {
+    background-color: #89b4fa;
+    color: #11111b;
+}
+
+.btn.secondary {
+    background-color: #313244;
+    color: #cdd6f4;
+}
+
+.workspace {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.sidebar-left, .sidebar-right {
+    width: 300px;
+    background-color: #181825;
+    padding: 15px;
+    border-right: 1px solid #313244;
+    overflow-y: auto;
+}
+
+.sidebar-right {
+    border-right: none;
+    border-left: 1px solid #313244;
+}
+
+h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #a6adc8;
+    margin-bottom: 12px;
+    margin-top: 15px;
+}
+
+h3:first-child {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+    color: #bac2de;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 6px 10px;
+    background-color: #313244;
+    border: 1px solid #45475a;
+    color: #cdd6f4;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.viewport-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#canvas3d {
+    flex: 1.2;
+    background-color: #11111b;
+}
+
+.diagram-panel {
+    flex: 1;
+    background-color: #181825;
+    border-top: 1px solid #313244;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs {
+    display: flex;
+    background-color: #11111b;
+    border-bottom: 1px solid #313244;
+}
+
+.tab-btn {
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    color: #a6adc8;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.tab-btn.active {
+    color: #89b4fa;
+    border-bottom: 2px solid #89b4fa;
+}
+
+.chart-box {
+    flex: 1;
+    padding: 10px;
+    position: relative;
+}
+
+.metric-card {
+    background-color: #313244;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.metric-card .label {
+    font-size: 0.75rem;
+    color: #a6adc8;
+}
+
+.metric-card .value {
+    font-weight: bold;
+    color: #a6e3a1;
+    font-size: 0.9rem;
+}
+
+.checks-list {
+    list-style: none;
+}
+
+.checks-list li {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.icon-pass {
+    color: #a6e3a1;
+    width: 16px;
+    height: 16px;
+}
